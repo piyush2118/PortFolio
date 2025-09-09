@@ -1,0 +1,47 @@
+{
+  "name": "piyush-modi-portfolio",
+  "version": "1.0.0",
+  "description": "3D Interactive Portfolio for Piyush Modi",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@react-three/postprocessing": "^2.15.11",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "framer-motion": "^10.16.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.3",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.6",
+    "three": "^0.160.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/three": "^0.158.3"
+  }
+}
