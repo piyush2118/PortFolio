@@ -196,7 +196,7 @@ const CloseButton = styled(motion.button)`
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [hoveredProject, setHoveredProject] = useState(null);
+  // const [hoveredProject, setHoveredProject] = useState(null);
 
   const projects = [
     {
@@ -278,8 +278,8 @@ const ProjectsSection = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 + index * 0.1 }}
               whileHover={{ scale: 1.02 }}
-              onHoverStart={() => setHoveredProject(project.id)}
-              onHoverEnd={() => setHoveredProject(null)}
+              onHoverStart={() => {}}
+              onHoverEnd={() => {}}
               onClick={() => setSelectedProject(project)}
             >
               <ProjectHeader>
