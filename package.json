@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "3D Interactive Portfolio for Piyush Modi",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
