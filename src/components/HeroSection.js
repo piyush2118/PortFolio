@@ -18,6 +18,9 @@ const HeroContent = styled.div`
   text-align: center;
   z-index: 2;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const TextContent = styled(motion.div)`
@@ -49,13 +52,17 @@ const HeroDescription = styled(motion.p)`
   color: #666666;
   margin-bottom: 2rem;
   line-height: 1.6;
-  max-width: 500px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const ButtonGroup = styled(motion.div)`
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 480px) {
     flex-direction: column;
@@ -108,6 +115,8 @@ const Button = styled(motion.button)`
 const SocialLinks = styled(motion.div)`
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SocialLink = styled(motion.a)`
@@ -135,6 +144,16 @@ const SocialLink = styled(motion.a)`
 
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <HeroContainer
       initial={{ opacity: 0 }}
@@ -163,7 +182,7 @@ const HeroSection = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Computer Science Student & AI Developer
+            AI Agent Developer & Automation Engineer
           </HeroSubtitle>
           
           <HeroDescription
@@ -171,8 +190,8 @@ const HeroSection = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Passionate about building intelligent systems, AI agents, and automation solutions. 
-            Currently pursuing B.Tech in Computer Science at BIT Mesra.
+            Specializing in AI agent development with LangChain, RAG systems, and intelligent automation workflows. 
+            Building conversational AI that can research, recall, and synthesize information seamlessly.
           </HeroDescription>
           
           <ButtonGroup
@@ -184,12 +203,14 @@ const HeroSection = () => {
               primary
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => scrollToSection('projects')}
             >
               View My Work
             </Button>
             <Button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => scrollToSection('contact')}
             >
               Get In Touch
             </Button>

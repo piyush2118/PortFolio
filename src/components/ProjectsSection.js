@@ -201,30 +201,30 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'AI Agent Smart Router',
-      description: 'Designed an embedding-driven classifier that directs queries to Pinecone-backed RAG for enterprise knowledge or MCP web tools for open-web lookups, orchestrated via FastAPI with request caching and de-duplication.',
-      tech: ['FastAPI', 'LangChain', 'Pinecone', 'MCP', 'Python'],
-      metrics: ['30-50% faster latency', 'Eliminated redundant calls'],
+      title: 'Augustus AI Agent',
+      description: 'Built for YouTube viewers: paste any public YouTube link and chat with the video; the agent fetches the transcript, embeds it in Pinecone, and answers follow-ups in natural language; a Next.js (TS) frontend streams grounded replies with citations.',
+      tech: ['Python', 'FastAPI', 'LangChain', 'Pinecone', 'OAuth2', 'Postgres', 'Alembic', 'Next.js (TS)'],
+      metrics: ['Dynamic tool selection', 'Session-aware memory'],
       color: '#667eea',
       github: '#',
-      demo: '#'
+      demo: 'https://augustuss.in'
     },
     {
       id: 2,
-      title: 'AI-Tweet-Agent',
-      description: '3-stage pipeline that parses long articles, extracts fact-rich bullets, and synthesizes hook-first Twitter threads with CTAs; shipped a one-click post flow to X with optional scheduling.',
-      tech: ['Python', 'X API', 'AI Processing'],
-      metrics: ['10x faster creation', 'One-click posting'],
+      title: 'Auto-Tweet-Agent',
+      description: '3-stage pipeline: parsed long articles, extracted fact-rich bullets, and synthesized hook-first Twitter threads with CTAs; shipped a one-click post flow to X with optional scheduling and draft previews.',
+      tech: ['Python', 'HuggingFace Mistral', 'X API'],
+      metrics: ['10x faster', 'One-click to X'],
       color: '#764ba2',
       github: '#',
-      demo: '#'
+      demo: 'https://ai-tweet-agent.onrender.com/'
     },
     {
       id: 3,
-      title: 'Cold Emailing Workflow',
-      description: 'Engineered large-scale outreach using warmed sender pools, domain rotation, AI-generated sequences, and reply-state webhooks that pace follow-ups to protect inbox placement.',
-      tech: ['n8n', 'Webhooks', 'AI Automation'],
-      metrics: ['10,000 emails/day', '10,000→200→10→2 funnel'],
+      title: 'Herald AI',
+      description: 'Natural language scheduling: accepts plain English input for setting and following up meeting schedules. Adaptive negotiation: if invitee declines, proposes alternative times and verifies availability in Google Calendar.',
+      tech: ['n8n', 'AI Agent', 'Google Calendar', 'Gmail'],
+      metrics: ['Natural language scheduling', 'Auto-negotiation'],
       color: '#fbbf24',
       github: '#',
       demo: '#'
@@ -232,19 +232,19 @@ const ProjectsSection = () => {
     {
       id: 4,
       title: 'X-Reply Machine',
-      description: 'Automated context gathering by crawling target X pages, generated lead-with-numbers replies that preserve thread context and brand voice, with Gmail approvals and audit trails.',
-      tech: ['n8n', 'Apify/RSS', 'Gmail API'],
-      metrics: ['99% time saved', 'Contextual replies'],
+      description: 'End-to-end loop: automated context gathering by crawling target X pages with Apify/RSS, generated lead-with-numbers replies that preserve thread context and brand voice, and surfaced drafts for review when confidence dipped.',
+      tech: ['n8n', 'Apify/RSS', 'Gmail'],
+      metrics: ['90% time saved', 'Context-aware replies'],
       color: '#10b981',
       github: '#',
       demo: '#'
     },
     {
       id: 5,
-      title: 'Two-Person Portrait LoRA',
-      description: 'Fine-tuned two LoRA models per subject on curated sets, then composed identity-conditioning prompts with controlled sampler/CFG sweeps to maintain consistent facial features across poses.',
+      title: 'Two-Person Portrait via LoRA',
+      description: '2 LoRAs: fine-tuned one model per subject on curated sets, then composed identity-conditioning prompts with controlled sampler/CFG sweeps to maintain consistent facial, hair, and skin features across poses.',
       tech: ['ComfyUI', 'LoRA', 'Flux Dev'],
-      metrics: ['2 LoRA models', 'Photoreal portraits'],
+      metrics: ['2 LoRA models', 'Photoreal output'],
       color: '#ef4444',
       github: '#',
       demo: '#'

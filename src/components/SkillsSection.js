@@ -111,27 +111,32 @@ const SkillsSection = () => {
     {
       title: 'Languages',
       icon: '💻',
-      skills: ['Python', 'C++', 'JavaScript', 'TypeScript']
+      skills: ['Python', 'C++', 'Javascript']
     },
     {
-      title: 'Frameworks & Libraries',
-      icon: '⚡',
-      skills: ['FastAPI', 'LangChain', 'React', 'OpenAI', 'TensorFlow']
-    },
-    {
-      title: 'Databases',
+      title: 'Databases/Infra',
       icon: '🗄️',
-      skills: ['Pinecone', 'SQL', 'MongoDB', 'PostgreSQL']
+      skills: ['Pinecone', 'Postgres', 'Docker']
     },
     {
-      title: 'Automation Tools',
-      icon: '🤖',
-      skills: ['n8n', 'ComfyUI', 'MCP', 'Docker', 'Kubernetes']
-    },
-    {
-      title: 'Core Concepts',
+      title: 'Relevant CS Skills',
       icon: '🧠',
-      skills: ['OOP', 'RAG', 'AI Agents', 'GIS', 'Machine Learning']
+      skills: ['OOP', 'Operating Systems']
+    },
+    {
+      title: 'AI Skills',
+      icon: '🤖',
+      skills: ['NLP', 'LangChain', 'finetuning', 'Ragas']
+    },
+    {
+      title: 'Frameworks',
+      icon: '⚡',
+      skills: ['FastAPI', 'NextJS']
+    },
+    {
+      title: 'Automation',
+      icon: '🔄',
+      skills: ['n8n', 'Cron jobs (Inngest)']
     }
   ];
 

@@ -160,10 +160,10 @@ const ExperienceSection = () => {
       duration: '8 weeks',
       description: 'Oracle HCM Cloud',
       responsibilities: [
-        'Streamlined onboarding checklists with 3 automations',
-        'Automated task assignment using rule-based triggers',
-        'Scheduled policy reports with parameterized templates',
-        'Unified fragmented workflows and improved traceability'
+        'Config-driven workflows: modeled .dat work-structures as the business skeleton and merged worker .dat files to compose HCM flows',
+        'Shipped 3 automations: checklists, rule-based task assignment, and scheduled policy reports',
+        'Added pre-flight schema validation and run auditability (status, retries, approvals)',
+        'Impact: improved traceability and policy compliance, reduced HR/IT/Payroll handoffs'
       ]
     }
   ];

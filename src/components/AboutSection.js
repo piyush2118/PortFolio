@@ -16,6 +16,9 @@ const AboutContent = styled.div`
   margin: 0 auto;
   padding: 0 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const TextSection = styled(motion.div)`
@@ -33,7 +36,8 @@ const SectionTitle = styled(motion.h2)`
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60px;
     height: 3px;
     background: #8b7355;
@@ -120,9 +124,9 @@ const AboutSection = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              I'm a Computer Science student at Birla Institute of Technology, Mesra, with a strong passion 
-              for artificial intelligence, automation, and building scalable systems. My journey in tech 
-              spans from developing AI agents and RAG systems to creating no-code automation workflows.
+              I'm a Computer Science student at Birla Institute of Technology, Mesra, specializing in 
+              AI agents, RAG systems, and automation workflows. My expertise spans from building intelligent 
+              conversational agents with LangChain to creating end-to-end automation solutions.
             </Paragraph>
             
             <Paragraph
@@ -131,8 +135,8 @@ const AboutSection = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               I specialize in Python, FastAPI, LangChain, and have hands-on experience with vector databases 
-              like Pinecone. I'm also passionate about GIS, geospatial data processing, and building 
-              end-to-end automation solutions using tools like n8n and ComfyUI.
+              like Pinecone. I'm passionate about building AI agents that can research, recall, and synthesize 
+              information, along with creating automation workflows using n8n and fine-tuning models with ComfyUI.
             </Paragraph>
           </AboutText>
 
@@ -153,7 +157,7 @@ const AboutSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <StatNumber>10+</StatNumber>
+              <StatNumber>5</StatNumber>
               <StatLabel>Projects</StatLabel>
             </StatCard>
             
@@ -161,8 +165,8 @@ const AboutSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <StatNumber>2</StatNumber>
-              <StatLabel>Internships</StatLabel>
+              <StatNumber>1</StatNumber>
+              <StatLabel>Internship</StatLabel>
             </StatCard>
           </StatsContainer>
         </TextSection>
