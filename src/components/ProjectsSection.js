@@ -207,7 +207,7 @@ const ProjectsSection = () => {
       metrics: ['Dynamic tool selection', 'Session-aware memory'],
       color: '#667eea',
       github: '#',
-      demo: 'https://augustuss.in'
+      demo: 'https://chataugustus.com'
     },
     {
       id: 2,
